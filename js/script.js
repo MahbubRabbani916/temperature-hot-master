@@ -5,7 +5,7 @@ const loadTemparature = () => {
     const inputFilled = document.getElementById('input-filled')
     const inputText = inputFilled.value
     inputFilled.value = '';
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${API_KYE}&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputText}&appid=${API_KYE}&units=metric`
     fetch(url)
         .then(res => res.json())
         .then(data => displayTemparature(data))
