@@ -15,7 +15,7 @@ const displayTemparature = temparature => {
     const container = document.getElementById('display-filled')
     const div = document.createElement('div')
     div.innerHTML = `<div class="weather-status text-white text-center">
-    <img src="http://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png" alt="">
+    <img src="https://openweathermap.org/img/wn/${temparature.weather[0].icon}@2x.png" alt="">
     <h1>${temparature.name}</h1>
     <h3><span >${temparature.main.temp}</span>&deg;C</h3>
     <p>${temparature.weather[0].main}</p>
